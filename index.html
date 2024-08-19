@@ -97,6 +97,32 @@
             <p>This birthday will be your most memorable birthday ever because , you know...</p>
         </footer>
     </main>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday!</h1>
+    </header>
+    <main>
+        <p>Click below !</p>
+        <button id="playAudioBtn">kr touch</button>
+    </main>
+    
+    <audio id="celebration-sound" src="Ishq_Murshid_Drama_Whistle_BGM___Download_Link_⤵️___Ishq_Murshid_Drama_New_Ringtone___Pak_Drama_BGM(128k).m4a"></audio>
+
+    <script>
+        document.getElementById('playAudioBtn').addEventListener('click', function() {
+            document.getElementById('celebration-sound').play();
+        });
+    </script>
+</body>
+</html>
+
     <div id="preTimer"></div>
     <div id="timer" class="hidden"></div>
     <audio id="celebration-sound" src="Ishq_Murshid_Drama_Whistle_BGM___Download_Link_⤵️___Ishq_Murshid_Drama_New_Ringtone___Pak_Drama_BGM(128k).m4a"></audio>
@@ -111,7 +137,7 @@
             const timeLeft = unlockTime - now;
 
             if (timeLeft <= 0) {
-                document.getElementById('preTimer').textContent = "Here is a message";
+                document.getElementById('preTimer').textContent = "dear .......";
                 document.getElementById('timer').classList.remove('hidden');
                 clearInterval(preTimerInterval);
                 startTimer();
@@ -127,7 +153,7 @@
                 const timeLeft = unlockTime - now;
 
                 if (timeLeft <= 0) {
-                    document.getElementById('timer').textContent = "oopr hai link beeech mai";
+                    document.getElementById('timer').textContent = "hum hum na rahe tum tum na rahe";
                     document.getElementById('treasureLink').classList.remove('hidden');
                     document.getElementById('celebration-sound').play();
                     // Add confetti or other effects here
